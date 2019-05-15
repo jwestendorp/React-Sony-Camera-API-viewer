@@ -1,18 +1,34 @@
 {
-  "name": "express_sony_api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "node-fetch": "^2.3.0",
+    "bootstrap": "^4.1.3",
+    "cors": "^2.8.5",
     "node-json-rpc": "0.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
     "request": "^2.88.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "react": "cross-env REACT_APP_API_BASE=http://localhost:5000 react-scripts start",
+    "server": "nodemon ./server/index.js",
+    "start": "npm run server & npm run react"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
