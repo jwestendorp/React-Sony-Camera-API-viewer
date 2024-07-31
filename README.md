@@ -1,4 +1,4 @@
-# Sony camera api proxy (beta)
+# Sony camera api proxy 
 
 React interface for testing sony camera api. Requests are send to the camera via a proxy server to work around CORS during development. 
 
